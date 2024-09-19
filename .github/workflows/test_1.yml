@@ -32,8 +32,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4.1.7
+
       - name: LS
         run: ls -al
+
+      - name: My action with input"
+        uses: ./.github/actions/my-action
+        with:
+          message: "Elias"
 
       - name: My action"
         uses: ./.github/actions/my-action
