@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      USER_NAME: Elias iabñez
+      USER_NAME: Elias ibanez
 
     services:
       mysql:
