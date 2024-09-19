@@ -28,3 +28,6 @@ jobs:
 
       - name: variable entorno GITHUB
         run: echo "Variable entorno en GITHUB ${{vars.USER_NAME}}"
+
+      - name: Secret GITHUB
+        run: echo "Variable secreta ${{secrets.MY_SECRET}}"
