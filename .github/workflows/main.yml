@@ -10,10 +10,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.7
 
-      - name: LS
-        run:  |
-          chmod +x script.sh
-          ./script.sh
+      # - name: LS
+      #   run:  |
+      #     chmod +x script.sh
+      #     ./script.sh
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.0.4
@@ -23,3 +23,10 @@ jobs:
       - name: Node version
         run: node --version
 
+      - name: PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - name: PHP version
+        run: php --version
