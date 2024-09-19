@@ -36,4 +36,4 @@ jobs:
         run: ls -al
 
       - name: My action"
-        uses: ././github/actions/my-action
+        uses: ./github/actions/my-action
