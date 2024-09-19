@@ -6,6 +6,9 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
 
+    env:
+      USER_NAME: Elias iabñez
+
     services:
       mysql:
         image: mysql:5.7
@@ -20,5 +23,8 @@ jobs:
           - 6379:6379
 
     steps:
-      - name: Test
-        run: ls
+      - name: Variable entorno jobs
+        run: echo "Variable entorno en Jobs ${{USER_NAME}}"
+
+      - name: variable entorno GITHUB
+        run: echo "Variable entorno en GITHUB ${{vars.USER_NAME}}"
