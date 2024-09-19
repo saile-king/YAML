@@ -24,7 +24,7 @@ jobs:
 
     steps:
       - name: Variable entorno jobs
-        run: echo "Variable entorno en Jobs ${{USER_NAME}}"
+        run: echo "Variable entorno en Jobs $USER_NAME"
 
       - name: variable entorno GITHUB
         run: echo "Variable entorno en GITHUB ${{vars.USER_NAME}}"
